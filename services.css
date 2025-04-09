@@ -382,6 +382,19 @@ left:600px;
 }
 
     }
+
+
+    @media (min-width: 200px) and (max-width: 500px) {
+
+        .call_now{
+            position: absolute;
+            top: 380px;
+            text-align: center;
+            left:10vw;
+        }
+
+    
+    }
     @media (min-width: 1380px) and (max-width: 1500px) {
 
 .login{
