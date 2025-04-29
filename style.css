@@ -297,7 +297,7 @@ justify-content: space-between;
 
 /* contact infor */
 .top-bar {
-    background-color: red;
+    background-color: rgb(62, 61, 59);
     color: white;
     display: flex;
     flex-wrap: wrap;  /* Allow wrapping */
