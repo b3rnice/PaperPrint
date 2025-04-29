@@ -242,6 +242,61 @@ left:1000px;
 
 
 
+/* contact infor */
+.top-bar {
+    background-color: rgb(62, 61, 59);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;  /* Allow wrapping */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    position: fixed; /* Keep it stuck at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-bar .right {
+    display: flex;
+    flex-wrap: wrap;  /* Allow wrapping inside the .right section */
+    gap: 10px;
+    font-size: 14px;
+    margin-left: auto;
+    justify-content: flex-end;
+    text-align: right;
+    flex: 1 0 100%; /* Ensure it takes up full width when wrapping */
+}
+
+@media (min-width: 768px) {
+    .top-bar {
+        flex-wrap: nowrap;
+    }
+
+    .top-bar .left, .top-bar .right {
+        flex: 0 0 auto;
+        text-align: left;
+    }
+
+    .top-bar .right {
+        justify-content: flex-end;
+    }
+}
+
+/* Ensure it wraps on smaller screens if needed */
+@media (max-width: 768px) {
+    .top-bar .right {
+        flex: 1 0 100%; /* Forces the content to wrap into a new line */
+    }
+}
+
+
+
+/*end of contact info*/
+
+
 
 
 
